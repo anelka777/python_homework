@@ -1,0 +1,54 @@
+# Which sections of the website are restricted for crawling?
+
+User-agent: *
+Disallow: /w/
+Disallow: /api/
+Disallow: /trap/
+Disallow: /wiki/Special:
+Disallow: /wiki/Spezial:
+Disallow: /wiki/Spesial:
+Disallow: /wiki/Special%3A
+Disallow: /wiki/Spezial%3A
+Disallow: /wiki/Spesial%3A
+
+
+# Are there specific rules for certain user agents?
+
+Yes,  The robots.txt file for Wikipedia includes specific directives for certain user agents.
+For instance:
+
+User-agent: MJ12bot
+Disallow: /
+This means that the MJ12bot is disallowed from crawling any part of the site.
+
+User-agent: Mediapartners-Google*
+Disallow: /
+This directive prevents Google's AdSense crawler from accessing the site.
+
+User-agent: IsraBot
+Disallow:
+An empty Disallow value indicates that IsraBot is allowed to crawl the entire site.
+
+User-agent: Orthogaffe
+Disallow:
+Similarly, Orthogaffe is permitted to access all areas of the site.
+
+User-agent: UbiCrawler
+Disallow: /
+UbiCrawler is completely disallowed from crawling the site.
+
+User-agent: Zealbot
+Disallow: /
+Zealbot is also prohibited from accessing any part of the site.
+
+and etc. 
+
+
+# Why websites use robots.txt 
+  and write 2-3 sentences explaining its purpose and how it promotes ethical scraping.
+
+Websites use the robots.txt file to guide web crawlers on which parts of the site
+should not be accessed. This helps protect sensitive information and manage server load.
+Respecting robots.txt is essential for ethical web scraping, 
+as it demonstrates consideration for website owners'preferences and
+ensures responsible data collection.

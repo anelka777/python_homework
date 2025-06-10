@@ -1,0 +1,2 @@
+I encountered compatibility issues with the WebDriver version and my browser.
+Updating the WebDriver and ensuring it matched my browser version resolved the issue.
